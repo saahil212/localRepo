@@ -78,7 +78,7 @@ STEPS to PUSH a Local Project / Directory to GIT HUB
 Create a new Repository in the GIT HUB (WEB)
 
 in Git Bash command prompt
--------------------
+--------------------------
 navigate to the directory/location using CD then type the following command
 
 Init - is used to create a new git repo (repository) in your local system.
