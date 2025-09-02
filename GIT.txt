@@ -1,0 +1,105 @@
+Git is a Version control System. It is the most Popular version control system in the world, 
+it is free and open source, it is fast and scalable.
+A Version Control system is a tool that helps to track changes in code.
+
+Github is a website that allows developers to store and manage their code using Git
+https://github.com
+A Repository is a folder on the Github 
+
+download : git-scm.com  - to download git
+Visual studio code - a code editor, you can code in any language
+Windows (Git Bash)
+
+for checking version of git
+git --version
+
+pwd - for checking working directory
+clear - to clear the screen
+
+configuring git
+===================
+git config --global user.name "My Name"
+git config --global user.email "someone@email.com"
+git config --list
+
+list : shows what all configurations are done in git
+
+~ : indicates that we are on the root directory
+
+ls : shows list of files in a directory
+ls -a : show hidden files also
+
+
+
+clone - Cloning a repository on our local machine.
+there are two location :
+Remote = GitHub
+Local =laptop /desktop
+when we need to copy a repository from Git hub to Local we use clone command
+
+git clone <project link>
+copy project link from git hub --click <code> button in the project and copy Https link
+
+git status -shows status of the code
+
+4 types of status
+unntracked - - new files that git doesn't yet track
+modified - changed
+staged - file is ready to be commited  
+unmodified - unchanged
+
+when a file is added using "git add" command the file is in staged mode
+when we commit it becomes "unchanged"
+
+add - adds a new or changed files in your working directory to the git  staging area
+git add <filename>
+(to add a single file)
+or 
+git add .
+(to Add all the files)
+
+commit-it is the record of change
+git commit -m "some message"
+m stands for message while commiting
+
+push - upload local repo content to remote repo
+git push <Repository name> <Branch name>
+git push origin Main
+
+
+by default all the respos in Git is called Remote REpository
+the default repository in which we are working is "origin"
+"Main" is the name of the branch in which we are working
+note : name it is case sensitive
+
+
+STEPS to PUSH a Local Project / Directory to GIT HUB
+=====================================================
+Create a new Repository in the GIT HUB (WEB)
+
+in Git Bash command prompt
+-------------------
+navigate to the directory/location using CD then type the following command
+
+Init - is used to create a new git repo (repository) in your local system.
+git init
+will make the directory a git repository
+to check if a directory is git repo type 
+"ls -a" . if it shows a git folder then its a git repo
+
+git remote add origin <-link->
+add a new remote repository under origin. <-link-> is the link/address of the new repo
+
+git remote -v
+to verify the remote repository
+
+git branch  
+to check the branch
+
+to rename a branch
+git rename -M main
+main is the new branch name
+
+to push the files inside the main branch 
+git push -u origin main
+
