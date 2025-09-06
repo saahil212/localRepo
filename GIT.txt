@@ -87,12 +87,6 @@ will make the directory a git repository
 to check if a directory is git repo type 
 "ls -a" . if it shows a git folder then its a git repo
 
-git remote add origin <-link->
-add a new remote repository under origin. <-link-> is the link/address of the new repo
-
-git remote -v
-to verify the remote repository
-
 git branch  
 to check the branch
 
@@ -100,6 +94,27 @@ to rename a branch
 git rename -M main
 main is the new branch name
 
+before git push you need to do a git remote add 
+
+git remote add origin <-link->
+add a new remote repository under origin. <-link-> is the link/address of the new repo
+
+git remote -v
+to verify the remote repository under which we are going to work
+
 to push the files inside the main branch 
 git push -u origin main
+-u means to set upstream. 
+upstream means we are going to work for a long time in this repo and branch only.
+so next time i can do a push directly without mentioning origin and main
+eg:  git push
 
+
+Workflow in Git
+===================
+--> create a Repo in GIT Hub (WEB)
+--> Clone the repository
+--> do the changes in local Repository
+--> Add the changes 
+--> commit the changes
+--> Push the changes in GIT Hub
